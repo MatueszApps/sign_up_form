@@ -5,7 +5,6 @@
     font-style: normal;
 }
 
-
 body, html {
     margin: 0;
     padding: 0;
@@ -16,11 +15,12 @@ body, html {
 .container {
     width: 80%;
     margin: 0 auto;
+    display: flex;
 }
 
 .left-section {
     width: 30%;
-    height: 100vh;
+  
     background-image: url('background.jpg');
     background-size: cover;
     position: relative;
@@ -58,4 +58,99 @@ body, html {
     margin: 0;
     height: 100%; /* Dodaj tę linię */
     font-family: 'NorseBold', Arial, Helvetica, sans-serif;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 70%;
+    color: black;
+    justify-content: center; /* Wyśrodkowanie formularza pionowo */
+    background-color: #f7f7f7;
+}
+
+.upper-section{
+    padding: 80px;
+    display: flex;
+    align-items: flex-start;
+    font-weight: bold;
+}
+
+.input-wrapper {
+    background-color: #fff;
+    box-shadow: 0px 4px 3px #E5E7EB;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.form-title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+.form-input {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px;
+}
+
+.form-input > label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.form-input > input {
+    border: 1px solid #E5E7EB;
+    box-shadow: 2px 2px 8px 0 #E5E7EB;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-input > input:focus {
+    border: 1px solid blue;
+}
+
+.form-input > input:invalid {
+    border: 1px solid red;
+}
+
+.validation-error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    display: none;
+}
+
+
+.bottom-section{
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.bottom-section button{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: green;
+    color: white;
+    box-shadow: inset;
 }
