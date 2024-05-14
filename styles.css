@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'NorseBold';
+    src: url('Norse-Bold.otf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.left-section {
+    width: 30%;
+    height: 100vh;
+    background-image: url('background.jpg');
+    background-size: cover;
+    position: relative;
+}
+
+.bar {
+    width: 100%;
+    position: absolute;
+    height: 130px;
+    background-color: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    top: 12rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: white;
+}
+
+.logo img {
+    height: 100%; /* Zmniejsza wysokość loga w stosunku do rodzica */
+    margin-right: 10px;
+}
+
+.logo h2 {
+    display: flex;
+    align-items: center;
+    font-size: 5em; /* Zmniejsza rozmiar czcionki */
+    margin: 0;
+    height: 100%; /* Dodaj tę linię */
+    font-family: 'NorseBold', Arial, Helvetica, sans-serif;
+}
